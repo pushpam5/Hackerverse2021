@@ -56,3 +56,10 @@
 
 - Users will have the permission to change the appearance of the application to an extent, to make it feel like their own space. They can keep track of upcoming live sessions and get notifications reminding them about the same.
 
+## To run the project locally:
+```
+npm i -g yarn
+```
+```
+git clone
+```
