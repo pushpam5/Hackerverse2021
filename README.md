@@ -70,3 +70,4 @@ yarn install
 ```
 yarn run android
 ```
+### Note - To run the project, make sure you have your phone connected to the system with usb and debugging over usb allowed.
