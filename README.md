@@ -61,5 +61,12 @@
 npm i -g yarn
 ```
 ```
-git clone
+git clone https://github.com/rranjan14/Hackerverse2021
+```
+### Inside root of the project, run:
+```
+yarn install
+```
+```
+yarn run android
 ```
