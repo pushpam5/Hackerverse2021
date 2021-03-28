@@ -1,6 +1,6 @@
 # Harkie - A helping hand to take you from abyss to bliss.
 
-<img src="https://github.com/rranjan14/Hackerverse2021/blob/main/github-images/harkie.png" alt="harkie" style="width375px;height=810px"/>
+![Harkie](https://github.com/rranjan14/Hackerverse2021/blob/main/github-images/harkie.png)
 
 
 ## Inspiration
