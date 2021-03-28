@@ -50,7 +50,7 @@
 
 - After this, the user will be directed to the Homepage.
 
-Homepage has BottomTabBar which contains different services, clicking each of these will navigate the user to a different page where the services/features can be used.
+- Homepage has BottomTabBar which contains different services, clicking each of these will navigate the user to a different page where the services/features can be used.
 
 
 
