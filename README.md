@@ -1,4 +1,4 @@
-# Hackoonamatata
+# Harkie - A helping hand to take you from abyss to bliss.
 
 ## Inspiration
  - This rise in the degree of psychological distress in terms of–Depression, Anxiety and Stress among the adult population in India during the strict lockdown period was much steeper compared to normal which itself is no less dangerous for the masses.
