@@ -12,7 +12,7 @@ const arrMenu = [
     { 'id': 0, name: 'Home', 'icon': 'home', 'navScreen': 'Home' },
     { 'id': 1, name: 'Videos', 'icon': 'video', 'navScreen': 'Videos' },
     { 'id': 2, name: 'Sessions', 'icon': 'users', 'navScreen': 'Sessions' },
-    { 'id': 3, name: 'Write Ups', 'icon': 'globe', 'navScreen': 'Write Ups' },
+    { 'id': 3, name: 'Messages', 'icon': 'message', 'navScreen': 'Messages' },
     { 'id': 4, name: 'Profile', 'icon': 'user', 'navScreen': 'Profile' },
     { 'id': 5, name: 'LogOut', 'icon': 'log-out', 'navScreen': 'HelpScreen' },
 ]
