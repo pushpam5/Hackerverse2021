@@ -18,7 +18,9 @@ export default function index({ navigation, route }) {
             </View>
             <Tab.Navigator tabBarOptions={{
                 labelStyle: styles.Label,
-                activeTintColor: colors.secondary,
+                activeTintColor: "#195190FF",
+                inactiveTintColor: "#222222",
+                activeBackgroundColor: "#195190FF",
                 indicatorStyle: styles.Tab,
                 style: { backgroundColor: colors.primary }
             }}>

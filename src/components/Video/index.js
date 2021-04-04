@@ -34,7 +34,7 @@ export default class VideoClass extends Component {
 const styles = StyleSheet.create({
     container: {
         // padding: 20,
-        backgroundColor: colors.primary,
+        backgroundColor: colors.white,
         overflow: "hidden",
         height: 270,
         margin: 20,

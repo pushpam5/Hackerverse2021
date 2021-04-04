@@ -1,9 +1,10 @@
-import { SET_USER_DETAILS, SET_AUTH_DETAILS, SET_LOGGED_IN, SET_IS_ONBOARDED, LOGOUT } from '../actionTypes';
+import { SET_USER_DETAILS, SET_AUTH_DETAILS, SET_LOGGED_IN, SET_IS_ONBOARDED, LOGOUT, SET_SESSION_ID } from '../actionTypes';
 
 const initialState = {
     isLoggedIn: false,
     user: {},
     isOnBoarded: false,
+    sessionId: ""
 }
 
 export default function (state = initialState, action) {
@@ -24,6 +25,11 @@ export default function (state = initialState, action) {
             return { ...state, isOnBoarded: action.val }
         case LOGOUT:
             return initialState
+        case SET_SESSION_ID:
+            return {
+                ...state,
+                sessionId: action.sessionId
+            }
         default:
             return state;
     }

@@ -2,41 +2,13 @@ import React, { useState } from 'react'
 import { TouchableNativeFeedback } from 'react-native'
 import { View, Text, StyleSheet } from 'react-native'
 import { Card, Title, Chip, Button, Avatar, Snackbar } from 'react-native-paper'
-import DateTimePicker from '@react-native-community/datetimepicker';
 
 import colors from '../../../config/colors'
-import { usersRef } from '../../../config/firebase'
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux'
+import * as userActions from '../../../config/store/actions/user'
 
-function index({ user }) {
-
-    const [date, setDate] = useState(new Date());
-    const [mode, setMode] = useState('date');
-    const [show, setShow] = useState(false);
-    const [visible, setVisible] = useState(false);
-
-    const onDismissSnackBar = () => setVisible(false);
-
-    const onChange = async (event, selectedDate) => {
-        const currentDate = selectedDate || date;
-        setShow(Platform.OS === 'ios');
-        setDate(currentDate);
-        const doc = await usersRef.doc(user.auth.uid).collection('PrivateSessions').add({
-            date
-        });
-        if (doc.id) {
-            setVisible(true)
-        }
-    };
-
-    const showMode = (currentMode) => {
-        setShow(true);
-        setMode(currentMode);
-    };
-
-    const showDatepicker = () => {
-        showMode('date');
-    };
+function index({ user, navigation, userActions }) {
 
     return (
         <>
@@ -67,28 +39,14 @@ function index({ user }) {
                 </TouchableNativeFeedback>
                 <View style={styles.buttonContainer}>
                     <Button color={colors.yellow} uppercase={false} mode="outlined" style={{ width: '45%', borderRadius: 30 }} onPress={() => { }}>Feedbacks</Button>
-                    <Button color={colors.blue} uppercase={false} mode="outlined" style={{ width: '45%', borderRadius: 30 }} onPress={showDatepicker}>Book Session</Button>
+                    <Button color={colors.blue} uppercase={false} mode="outlined" style={{ width: '45%', borderRadius: 30 }} onPress={() => {
+                        navigation.navigate('Messages', {
+                            itemId: 86,
+                            otherParam: 'anything you want here',
+                        });
+                    }}>Book Session</Button>
                 </View>
             </Card>
-            {show && (
-                <DateTimePicker
-                    testID="dateTimePicker"
-                    value={date}
-                    mode={mode}
-                    is24Hour={true}
-                    display="default"
-                    onChange={onChange}
-                />
-            )}
-            {visible ? <Snackbar
-                visible={visible}
-                onDismiss={onDismissSnackBar}
-                duration={3000}
-                style={{ backgroundColor: colors.purple }}
-            >
-                Session Booked!
-        </Snackbar> : null
-            }
         </>
     )
 }
@@ -134,4 +92,10 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, null)(index)
+const mapDispatchToProps = dispatch => {
+    return {
+        userActions: bindActionCreators(userActions, dispatch)
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(index)

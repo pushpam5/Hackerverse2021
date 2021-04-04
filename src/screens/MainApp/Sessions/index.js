@@ -13,8 +13,10 @@ const Sessions = ({ navigation }) => {
         <Tab.Navigator
             tabBarOptions={{
                 labelStyle: styles.Label,
-                activeTintColor: colors.secondary,
                 indicatorStyle: styles.Tab,
+                activeTintColor: "#195190FF",
+                inactiveTintColor: "#222222",
+                activeBackgroundColor: "#195190FF",
                 style: { backgroundColor: colors.primary }
             }}>
             <Tab.Screen name="Public Session" component={PublicSessions} />

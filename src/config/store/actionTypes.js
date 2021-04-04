@@ -3,3 +3,4 @@ export const SET_USER_DETAILS = "SET_USER_DETAILS";
 export const SET_AUTH_DETAILS = "SET_AUTH_DETAILS";
 export const SET_LOGGED_IN = "SET_LOGGED_IN";
 export const SET_IS_ONBOARDED = "SET_IS_ONBOARDED";
+export const SET_SESSION_ID = "SET_SESSION_ID";

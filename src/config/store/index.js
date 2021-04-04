@@ -34,7 +34,7 @@ if (__DEV__) {
     const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // add support for Redux dev tools
     store = createStore(
         persistedReducer,
-        composeEnhancers(applyMiddleware(...middlewares))
+        applyMiddleware(...middlewares)
     );
 } else {
     store = createStore(

@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 import { IconButton } from 'react-native-paper'
 import { createStackNavigator } from '@react-navigation/stack';
 
-import WriteUps from '../../../../../screens/MainApp/WriteUps'
+import Messages from '../../../../../screens/MainApp/Messages'
 import colors from '../../../../colors'
 
 
@@ -11,7 +11,7 @@ export default function index({ navigation, route }) {
     const Stack = createStackNavigator();
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Write Ups" component={WriteUps} options={{
+            <Stack.Screen name="Messages" component={Messages} options={{
                 headerStyle: {
                     backgroundColor: colors.secondary,
                 },

@@ -9,7 +9,7 @@ import colors from '../../colors'
 import CustomSideDrawer from './SideDrawer'
 import Video from './Stack/Video'
 import Sessions from './Stack/Sessions'
-import WriteUps from './Stack/WriteUps'
+import Messages from './Stack/Messages'
 import Notifications from '../../../screens/MainApp/Notifications';
 import Profile from '../../../screens/MainApp/Profile'
 import { createStackNavigator } from '@react-navigation/stack';
@@ -96,9 +96,9 @@ function TabNavigator({ navigation, route }) {
         <Tabs.Navigator
             initialRouteName="Home"
             tabBarOptions={{
-                activeTintColor: "#680a0a",
+                activeTintColor: "#fff",
                 inactiveTintColor: "#222222",
-                activeBackgroundColor: "#ffe5b4"
+                activeBackgroundColor: "#195190FF"
             }}
         >
             <Tabs.Screen
@@ -141,14 +141,14 @@ function TabNavigator({ navigation, route }) {
                 }}
             />
             <Tabs.Screen
-                name="Write Ups"
-                component={WriteUps}
+                name="Messages"
+                component={Messages}
                 options={{
                     tabBarIcon: ({ focused, color }) => (
                         <TabBarIcon
                             focused={focused}
                             tintColor={color}
-                            name="globe"
+                            name="message-square"
                         />
                     ),
                 }}
