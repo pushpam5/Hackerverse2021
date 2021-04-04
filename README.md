@@ -15,7 +15,8 @@
 - This inspired us to make a platform which has particular features and content which can help people to escape negativity and bring in them the confidence and strength to lower down the psychological distress.
 
 
-
+![Harkie1](https://github.com/rranjan14/Hackerverse2021/blob/main/github-images/image1.jpeg)
+![Harkie2](https://github.com/rranjan14/Hackerverse2021/blob/main/github-images/image2.jpeg)
 
 
 
@@ -40,15 +41,13 @@
 
 - First of all, the user needs to register themselves with application by just providing his/her Email ID .This would ensure the anonymity of the user and they can feel free to access this platform.Then user will be asked to choose a password which will be asked later for authentication during Logging In to the app.A verification link will be sent to the Email-ID provided to complete the registration process.
 
-	
+![Harkie3](https://github.com/rranjan14/Hackerverse2021/blob/main/github-images/image4.jpeg)
 
 - Now User can Log In to his account using email-id & password.
+![Harkie4](https://github.com/rranjan14/Hackerverse2021/blob/main/github-images/image3.jpeg)
 
 - While visiting the app for the first time, users will see the app tour which will provide a basic overview of the application.
 
-
-
- 
 
 
 - After this, the user will be directed to the Homepage.
@@ -58,6 +57,8 @@
 
 
 - Users will have the permission to change the appearance of the application to an extent, to make it feel like their own space. They can keep track of upcoming live sessions and get notifications reminding them about the same.
+
+![Harkie5](https://github.com/rranjan14/Hackerverse2021/blob/main/github-images/image5.jpeg)
 
 ## To run the project locally:
 ```
